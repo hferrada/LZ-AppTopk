@@ -1250,9 +1250,16 @@ void runExperiments(ParamProgram *par){
 		createPatterns(par, m);
 		runExperimentsOne(par, m, kst);
 
+		m=10;
+		createPatterns(par, m);
+		runExperimentsOne(par, m, kst);
+
 		if (par->index->nDocs > 100){
+			kst=100;
+			m=6;
+			createPatterns(par, m);
+			runExperimentsOne(par, m, kst);
 			m=10;
-			uint kst=100;
 			createPatterns(par, m);
 			runExperimentsOne(par, m, kst);
 		}
