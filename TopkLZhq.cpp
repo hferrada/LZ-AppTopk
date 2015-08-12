@@ -1316,7 +1316,8 @@ void TopkLZhq::readListFiles(char *inputFile, bool lowercase){
 				aux[len] = cutDoc;
 				//cout << aux << endl;
 				for (i=0; i<len; i++, lenText++){
-
+					if (((int)aux[i]) < 0)
+						aux[i] = ' ';
 					if (present[(uint)aux[i]] == false){
 						sigma++;
 						present[(uint)aux[i]] = true;
