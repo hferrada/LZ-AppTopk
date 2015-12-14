@@ -21,9 +21,9 @@ LIB=/home/hferrada/lib/libsdsl.a /home/hferrada/lib/libdivsufsort.a /home/hferra
 4.- Make: To make the index just execute the command 'make' and this will create the lib: 'appTopkLZhq.a'.
 5.- Use the index in your program linking the 'appTopkLZhq.a' file and include the header "TopkLZhq.h" in your sorce code.  
 Execute: "make build_binary" to generate a binary file "buildAppTopkLZhq" from the source file "buildAppTopkLZhq.cpp" (included here as example).
-'buildDL_Sada.cpp' creates the index given the parameters included in a config file, which is indicated in the call.  
+'buildAppTopkLZhq.cpp' creates the index given the parameters included in a config file, which is indicated in the call.  
 Execute: "make load_binary" to generate a binary file "loadAppTopkLZhq" from the source file "loadAppTopkLZhq.cpp" (included here as example)
-'loadDL_Sada.cpp' loads the index given the parameters included in the config file, which is indicated in the call.  
+'loadAppTopkLZhq.cpp' loads the index given the parameters included in the config file, which is indicated in the call.  
 
 Config File example
 ===================
